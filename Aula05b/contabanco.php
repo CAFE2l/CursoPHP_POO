@@ -33,6 +33,7 @@
         public function depositar($v){
             if ($this->getStatus()){
                 $this->setSaldo($this->getSaldo() + $v);
+                echo "<p>Depósito realizado R$ $v reais na conta da " . $this->getDono() . "</p>";
             }else{
                 echo "Conta fechada, Impossível depositar";
             }
@@ -42,6 +43,7 @@
             if ($this->getStatus()){
                 if ($this->getSaldo() > $v){
                     $this->setSaldo($this->getSaldo() - $v);
+                    echo "<p>Saque realizado R$ $v reais com sucesso na conta da " . $this->getDono() . "</p>";
                 }else{
                     echo "Saldo insuficiente";
             
@@ -59,6 +61,7 @@
             }
            if ($this->getStatus()){
                 $this->setSaldo($this->getSaldo() - $v);
+                echo "<p>Mensalidade de $v debitada na conta de " . $this->getDono() . "</p>";
            } else{
                 echo "Conta fechada, Impossível pagar mensalidade";
            }
