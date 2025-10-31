@@ -28,6 +28,15 @@
             $p1->pagarMensalidade();
             $p2->pagarMensalidade();
 
+            $p1->sacar(338);
+            $p2->sacar(630);
+
+
+
+            $p1->fecharConta();
+            $p2->fecharConta();
+
+
 
             print_r($p1);
             print_r($p2);
