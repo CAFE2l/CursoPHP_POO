@@ -19,7 +19,7 @@
         $lutador[4] = new Lutador("Ufocobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3);
         $lutador[5] = new Lutador("Nerdaard", "EUA", 30, 1.81, 105.7, 12, 2, 4);
 
-        $lutador[0]->status();
+        $lutador[3]->aprensentar();
     ?>
 </div>
 </body>

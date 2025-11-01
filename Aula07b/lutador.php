@@ -38,7 +38,7 @@
             $this->nome = $no;
             $this->nacionalidade = $na;
             $this->idade = $id;
-            $this->setCategoria($pe);
+            $this->setPeso($pe);
             $this->categoria = null;
             $this->vitorias = $vi;
             $this->derrotas = $de;
