@@ -12,7 +12,7 @@
         <?php
             require_once 'contabanco.php';
             $p1 = new ContaBanco(); // Jubileu
-            $p2 = new ContaBanco(); // Creuza
+            $p2 = new ContaBanco(); // Creuza parei no minuto 23
             $p1->setnumConta(1111);
             $p2->setnumConta(2222);
             $p1->abrirConta("cc");
