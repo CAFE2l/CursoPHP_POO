@@ -42,18 +42,21 @@
             echo "Está ligado?: " . ($this->getLigado()?"SIM":"NÃO");
             echo "Volume: " . $this->getVolume();
             echo "Está tocando?: " . ($this->getTocando()?"SIM":"NÃO");
+            for($i=0; $i <= $this->getVolume(); $i+=10){
+                echo "|";
+            }
         }
         public function fecharMenu(){
             echo "Fechando Menu...";
         }
         public function maisVolume(){
             if($this->getLigado()){
-                $this->setVolume($this->getVolume() + 1);
+                $this->setVolume($this->getVolume() + 5);
             }
         }
         public function menosVolume(){
             if($this->getLigado()){
-                $this->setVolume($this->getVolume() - 1);
+                $this->setVolume($this->getVolume() - 5);
             }
         }
         public function ligarMudo(){
