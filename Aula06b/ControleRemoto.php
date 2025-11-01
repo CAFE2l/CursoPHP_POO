@@ -39,9 +39,14 @@
             $this->setLigado(false);
         }
         public function abrirMenu(){
+            echo "<p>-----MENU-----</p>";
             echo "Está ligado?: " . ($this->getLigado()?"SIM":"NÃO");
-            echo "Volume: " . $this->getVolume();
+            
+            echo"<br>";
             echo "Está tocando?: " . ($this->getTocando()?"SIM":"NÃO");
+            echo"<br>";
+            echo "Volume: " . $this->getVolume();
+        
             for($i=0; $i <= $this->getVolume(); $i+=10){
                 echo "|";
             }
@@ -52,19 +57,23 @@
         public function maisVolume(){
             if($this->getLigado()){
                 $this->setVolume($this->getVolume() + 5);
+            } else{
+                echo "<p>ERRO! não posso aumentar o volume</p>";
             }
         }
         public function menosVolume(){
             if($this->getLigado()){
                 $this->setVolume($this->getVolume() - 5);
-            }
+           } else{
+                echo "<p>ERRO! não posso diminuir o volume</p>";
+           }
         }
         public function ligarMudo(){
             if($this->getLigado() && $this->getVolume() > 0){
                 $this->setVolume(0);
             }
         }
-        public function desligarMudo(){
+        public function desligarMudo(){ 
             if($this->getLigado() && $this->getVolume() == 0){
                 $this->setVolume(50);
             }

@@ -8,9 +8,18 @@
 </head>
 <body>
 <div>
-    <?php 
-        
-    ?>
+    <h1>Projeto Controle Remoto</h1>
+    <pre>
+        <?php
+            require_once 'ControleRemoto.php';
+            require_once 'controlador.php';
+            $c = new ControleRemote();
+            $c->ligar();
+            $c->maisVolume();
+            $c->abrirMenu();
+            
+        ?>
+    </pre>
 </div>
 </body>
 </html>
