@@ -23,27 +23,27 @@ require_once "lutador.php";
 
         public function lutar(){
             if($this->aprovada){
-                $this->desafiado.apresentar();
-                $this->desafiante.apresentar();
+                $this->desafiado->apresentar();
+                $this->desafiante->apresentar();
 
                 $vencedor = rand(0,2);
 
                 switch($vencedor){
                     case 0:
-                        break;
                         echo "EMPATE";
-                        $this->desafiado.empatarLuta();
-                        $this->desafiante.empatarLuta();
+                        $this->desafiado->empatarLuta();
+                        $this->desafiante->empatarLuta();
+                        break;
 
                     case 1:
                         echo "<p>".$this->desafiado->getNome()." venceu</p>";
-                        $this->desafiado.perderLuta();
-                        $this->desafiante.ganharLuta();
+                        $this->desafiado->ganharLuta();
+                        $this->desafiante->perderLuta();
 
                     case 2:
                         echo "<p>".$this->desafiante->getNome()." venceu</p>";
-                        $this->desafiado.ganharLuta();
-                        $this->desafiante.perderLuta();
+                        $this->desafiado->perderLuta();
+                        $this->desafiante->ganharLuta();
                         break;
                     }
             } else{
