@@ -26,7 +26,10 @@
 
 
             $UEC01 = new Luta();
-            $UEC01->marcarLuta($l1[0]$l2[1]);
+            $UEC01->marcarLuta($l1[0], $l2[1]);
+            $UEC01->lutar();
+            $l1[0]->status();
+            $l2[1]->status();
         ?>
     </pre>
 </div>
