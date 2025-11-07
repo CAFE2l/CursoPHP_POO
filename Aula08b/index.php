@@ -25,6 +25,9 @@
                 $l[0]->avancarPag();
                 $l[0]->detalhes();
 
+                $l[1]->detalhes();
+                $l[2]->detalhes();
+
             ?>
         </pre>
     </div>
