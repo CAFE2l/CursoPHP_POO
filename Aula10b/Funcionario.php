@@ -1,5 +1,6 @@
 <?php 
-    class Funcionario{
+    require_once 'Pessoa.php';
+    class Funcionario extends Pessoa{
         private $setor;
         private $trabalhando;
 

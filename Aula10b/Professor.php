@@ -1,5 +1,7 @@
 <?php 
-    class Professor{
+    require_once 'Pessoa.php';
+
+    class Professor extends Pessoa{
         private $especialidade;
         private $salario;
 
