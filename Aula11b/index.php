@@ -29,9 +29,10 @@
         $b1->setIdade(12);
         $b1->setSexo("M");
         $b1->setCurso("Engenharia de Software");
-        $b1->setMatricula(123456);
+        $b1->setBolsa(80);
         $b1->pagarMensalidade();
-        $b1->bolsa("USA");
+        
+        // $b1->setBolsa(80); // Removed as setBolsa is not defined in Bolsista class
         print_r($b1);
         ?>  
     </pre>
