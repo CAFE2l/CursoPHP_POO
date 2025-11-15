@@ -16,8 +16,17 @@
         }
 
         public function soltarBolha(){
-            //Parei no minuto 6:30
+            echo "<p>Soltou um Bolha</p>";
        }
+
+       function getcorEscama(){
+            return $this->corEscama;
+       }
+
+       function setcorEscama($corEscama){
+            $this->corEscama = $corEscama;
+       }
+
     }
 
 ?>
