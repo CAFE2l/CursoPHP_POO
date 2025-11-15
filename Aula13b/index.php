@@ -10,6 +10,8 @@
 <div>
     <pre>
         <?php 
+        require_once 'Mamifero.php';        
+        $m = new Mamifero();
         ?>
     </pre>
 </div>
