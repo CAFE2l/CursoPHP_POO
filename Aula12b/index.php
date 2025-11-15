@@ -15,8 +15,16 @@
         require_once 'Peixe.php';
         require_once 'Mamifero.php';
         require_once 'Reptil.php';
-    
-            
+
+        $a = new Ave();
+        $m = new Mamifero();
+        $p = new Peixe();
+        $r = new Reptil();
+
+        $m->setPeso(33.5);
+        $m->locomover();
+        $a->locomover();
+
         ?>
     </pre>
 </div>
