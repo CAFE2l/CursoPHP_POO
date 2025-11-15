@@ -10,7 +10,12 @@
 <div>
     <pre>
         <?php 
-        
+        require_once 'Animal.php';
+        require_once 'Ave.php';
+        require_once 'Peixe.php';
+        require_once 'Mamifero.php';
+        require_once 'Reptil.php';
+    
             
         ?>
     </pre>
