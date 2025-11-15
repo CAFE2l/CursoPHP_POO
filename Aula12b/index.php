@@ -24,7 +24,7 @@
         $m->setPeso(33.5);
         $m->locomover();
         $a->locomover();
-
+        $r->locomover();
         ?>
     </pre>
 </div>
