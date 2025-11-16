@@ -13,8 +13,10 @@
         require_once 'Mamifero.php';        
         require_once 'Lobo.php';
         require_once 'Cachorro.php';
-        $m = new Cachorro();
-        $m->emitirSom();
+        $c = new Cachorro();
+        $c->reagirFrase("Toma Comida");
+        $c->reagirHora(12);
+        $c->reagirDono(false);
         ?>
     </pre>
 </div>
