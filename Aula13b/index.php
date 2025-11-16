@@ -11,7 +11,10 @@
     <pre>
         <?php 
         require_once 'Mamifero.php';        
-        $m = new Mamifero();
+        require_once 'Lobo.php';
+        require_once 'Cachorro.php';
+        $m = new Cachorro();
+        $m->emitirSom();
         ?>
     </pre>
 </div>

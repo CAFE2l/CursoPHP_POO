@@ -4,6 +4,37 @@
         public function emitirSom(){
             echo "<p>AU AU AU </p>";
         }
+
+    function reagirFrase($frase){
+        if ($frase == "Toma Comida" || $frase == "Olá"){
+            echo "<p>Abanar e Latir</p>";
+
+        }else{
+            echo "<p>Rosnar</p>";
+        }
+    }
+
+    function reagirHora($hora){
+        if($hora < 12){
+            echo "<p>Abanar</p>";
+        } elseif($hora>=18){
+            echo "<p>Ignorar</p>";
+        }else{
+            echo "<p>Abanar e Latir</p>";
+        }
+    }
+
+    function reagirDono($Dono){
+        if ($Dono == True){
+            echo "<p>Abanar e Latir</p>";
+        }else{
+            echo "<p>Rosnar</p>";
+        }
+    }
+
+    function reagirIdadePeso($idade, $peso){
+        
+    }
     }
 
 ?>
