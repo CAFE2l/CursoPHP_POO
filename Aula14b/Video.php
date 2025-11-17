@@ -1,11 +1,20 @@
 <?php 
-    class Video {
+    require_once 'AcoesVideo.php';
+    class Video implements AcoesVideo {
         private $Titulo;
         private $Avaliacao;
         private $Views;
         private $Curtidas;
         private $Reproduzindo;
         
+        public function __construct($Titulo){
+            $this->Titulo = $Titulo;
+            $this->Avaliacao = 1;
+            $this->Views = 0;
+            $this->Curtidas = 0;
+            $this->Reproduzindo = false;
+        }
+
         function getTitulo(){
             return $this->Titulo;
         }
@@ -45,6 +54,18 @@
 
         function setReproduzindo($Reproduzindo){
             $this->Reproduzindo = $Reproduzindo;
+        }
+
+        public function like(){
+
+        }
+
+        public function pause(){
+
+        }
+
+        public function play(){
+
         }
         
     }
