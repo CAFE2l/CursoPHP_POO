@@ -57,15 +57,15 @@
         }
 
         public function like(){
-
+            $this->Curtidas++;
         }
 
         public function pause(){
-
-        }
+            $this->Reproduzindo = false;
+        }   
 
         public function play(){
-
+            $this->Reproduzindo = true;
         }
         
     }
