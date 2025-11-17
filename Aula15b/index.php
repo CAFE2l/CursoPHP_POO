@@ -32,7 +32,8 @@
        $v[3] = new View($Espectador, $Filme);
 
     $v[0]->avaliar();
-    
+    $v[1]->avaliarPorc(84);
+    $v[2]->avaliarNota(9);
 
        print_r($v[0]);
         
