@@ -15,6 +15,22 @@
 
         }
 
+        function getLogin(){
+            return $this->Login;
+        }
+
+        function setLogin($Login){
+            $this->Login = $Login;
+        }
+
+        function gettotAsistido(){
+            return $this->totAsistido;
+        }   
+
+        function settotAsistido($totAsistido){
+            $this->totAsistido = $totAsistido;
+        }
+
     }
 
 ?>

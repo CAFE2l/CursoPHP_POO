@@ -15,7 +15,7 @@
        require_once 'AcoesVideo.php';
        require_once 'Pessoa.php';
        
-        $g[0] = new Gafanhoto("Jubileu", 22, "M", "Juba");
+        $g = new Gafanhoto("Jubileu", 22, "M", "Juba");
         print_r($g);
        ?>
     </pre>
