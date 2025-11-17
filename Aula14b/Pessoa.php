@@ -1,9 +1,20 @@
 <?php 
-    class Pessoa{
+    abstract class Pessoa{
         protected $Nome;
         protected $Idade;
         protected $Sexo;
         protected $Experiencia;
+        
+        public function __consttruct($Nome, $Idade, $Sexo){
+            $this->Nome = $Nome;
+            $this->Idade = $Idade;
+            $this->Sexo = $Sexo;
+            $this->Experiencia = 0;
+        }
+
+        protected function ganharExp($n){
+            $this->Experiencia += $n;
+        }
 
         function getNome(){
             return $this->Nome;
@@ -37,7 +48,7 @@
             $this->Experiencia = $Experiencia;
         }
 
-        
+
 
     }
 
