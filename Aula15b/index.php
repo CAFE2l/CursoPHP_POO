@@ -14,9 +14,12 @@
        require_once 'Gafanhoto.php';
        require_once 'AcoesVideo.php';
        require_once 'Pessoa.php';
-       
-        $g = new Gafanhoto("Jubileu", 22, "M", "Juba");
-        print_r($g);
+       require_once 'View.php';
+
+       $v[0] = new View($Espectador, $Filme);
+
+       print_r($v[0]);
+        
        ?>
     </pre>
 </div>
