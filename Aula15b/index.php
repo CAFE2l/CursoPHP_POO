@@ -9,9 +9,15 @@
 <body>
 <div>
     <pre>
-        <?php 
-        
-        ?>
+       <?php
+       require_once 'Video.php';
+       require_once 'Gafanhoto.php';
+       require_once 'AcoesVideo.php';
+       require_once 'Pessoa.php';
+       
+        $g = new Gafanhoto("Jubileu", 22, "M", "Juba");
+        print_r($g);
+       ?>
     </pre>
 </div>
 </body>
